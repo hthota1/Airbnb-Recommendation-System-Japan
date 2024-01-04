@@ -1,25 +1,63 @@
 # Airbnb Recommendation System - Japan
+
 ![Airbnb image](https://cdn.i.haymarketmedia.asia/?n=campaign-asia%2Fcontent%2FAirbnb-girls-trip.jpg)
 
 # Business Problem
-Airbnb aims to enhance its presence in Japan by identifying popular properties in Tokyo and expanding its business to other cities outside the capital. Airbnb wants to understand the key factors that contribute to the popularity of properties in Tokyo. These were assessed based on price per night, amenities offered, and user ratings. 
 
-Develop a recommendation system to guide new users in rating properties and receive tailored recommendations based on their preferences.
+The business problem is two fold. First, Airbnb aims to enhance its presence in Japan by identifying popular properties in Tokyo and expanding its business to other cities outside the capital. Airbnb wants to understand the key factors that contribute to the popularity of properties in Tokyo. These were assessed based on property type, price per night, amenities offered, and user ratings.
+
+Second, Airbnb wants to increase the utilization of the existing housing on the platform. To aid with this, I developed a recommendation system to guide new users in rating properties and receive tailored recommendations based on their preferences.
 
 # Data Overview
-Data sourced from [Inside Airbnb](http://insideairbnb.com/get-the-data/) consisting of 2 datasets. One for listings information and one for reviews information. 
+
+Data sourced from [Inside Airbnb](http://insideairbnb.com/get-the-data/) consisting of 2 datasets.
+
+* **Datasets:** 
+    * Listings provides information on the attributes of the property.
+    * Reviews provides information of the user review for the property.
+* **Source:** [Inside Airbnb](http://insideairbnb.com/get-the-data)
+
+* **Limitations**
+    * User reviews can be biased. Some guests may be more likely to leave reviews based on extreme experiences (either very positive or very negative), leading to a potential bias in the sentiment of reviews
+    * Limited historical data due to Covid-19 impact on bookings
+    * Listings information can vary in quality. Some listings may have high-quality descriptions and images, while others may lack important details.
+* **Filters**
+    * Listings with a minimum of 10 reviews
+    * May 1, 2023
+
 
 # Modeling
-The following models were tried. 
-1. KNN Baseline
-2. KNN Basic
-3. SVD
-4. NMF 
 
-SVD has the lowest RMSE 0.096, indicating the highest predictive accuracy among the models tested.
+In the pursuit of creating an effective recommendation system for my Airbnb analysis project, I explored several models:
+* KNN Baseline
+* KNN Basic
+* SVD (Singular Value Decomposition)
+* NMF (Non-negative Matrix Factorization)
+
+After fine tuning, the SVD model emerged as the best one, achieving the lowest Root Mean Squared Error (RMSE) at 0.096. Consequently, SVD has been identified as the primary model for the recommendation system, promising personalized suggestions and enhance user experience.
 
 # Recommendations
 
+- **Invest** in entire homes or apartments , for consistent high ratings
+- **Include** popular amenities - security, safety features and bath and kitchen essentials
+- **Price** the listing under $200/night
+
 # Next Steps
 
+- **Change** the user interface so that listing recommendations are shown near the top of the homepage.
+- **Include** feedback survey icons to ultimately gain insight on the performance of the listing recommendations.
+- **Add** demographic data for reviewers.
+
+# For more information
+The complete analysis can be found in my [Jupyter Notebook]() and [presentation](). 
+
+For any additional questions, you can contact me:
+[Harshitha Thota](harshitha.thota@gmail.com)
+
 # Repository Structure
+├── data                           <- Data file used in this project  
+├── images                         <- Contains images and graphs used in this project sourced from code and outside source  
+├── gitignore.txt                  <- Contains a list of files to be ignored from Github  
+├── airbnb_analysis.ipynb          <- Narrative documentation of the analysis in a Jupyter notebook  
+├── README.md                      <- The top-level README for reviewers of this project  
+└── presentation.pdf               <- PDF version of the project presentation  
