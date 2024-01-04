@@ -9,9 +9,6 @@ The business problem is two fold. First, Airbnb aims to enhance its presence in 
 Second, Airbnb wants to increase the utilization of the existing housing on the platform. To aid with this, I developed a recommendation system to guide new users in rating properties and receive tailored recommendations based on their preferences.
 
 # Data Overview
-
-Data sourced from [Inside Airbnb](http://insideairbnb.com/get-the-data/) consisting of 2 datasets.
-
 * **Datasets:** 
     * Listings provides information on the attributes of the property.
     * Reviews provides information of the user review for the property.
@@ -49,15 +46,19 @@ After fine tuning, the SVD model emerged as the best one, achieving the lowest R
 - **Add** demographic data for reviewers.
 
 # For more information
-The complete analysis can be found in my [Jupyter Notebook]() and [presentation](). 
+The complete analysis can be found in my [Jupyter Notebook](https://github.com/hthota1/Airbnb-Recommendation-System-Japan/blob/main/airbnb_analysis.ipynb) and [presentation](https://github.com/hthota1/Airbnb-Recommendation-System-Japan/blob/main/Presentation.pdf). 
 
 For any additional questions, you can contact me:
 [Harshitha Thota](harshitha.thota@gmail.com)
 
 # Repository Structure
-├── data                           <- Data file used in this project  
-├── images                         <- Contains images and graphs used in this project sourced from code and outside source  
-├── gitignore.txt                  <- Contains a list of files to be ignored from Github  
-├── airbnb_analysis.ipynb          <- Narrative documentation of the analysis in a Jupyter notebook  
+├──data                                     <- Data file used in this project  
+├── images      
+<- Contains images and graphs used in this project sourced from code and outside source 
+├── gitattributes.txt             
+<- To track Data file using LFS
+├── gitignore.txt                  
+<- Contains a list of files to be ignored from Github  
+├── presentation.pdf               <- PDF version of the project presentation
 ├── README.md                      <- The top-level README for reviewers of this project  
-└── presentation.pdf               <- PDF version of the project presentation  
+└── airbnb_analysis.ipynb          <- Narrative documentation of the analysis in a Jupyter notebook  
