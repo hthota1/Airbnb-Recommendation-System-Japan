@@ -52,13 +52,16 @@ For any additional questions, you can contact me:
 [Harshitha Thota](harshitha.thota@gmail.com)
 
 # Repository Structure
-├──data                                     <- Data file used in this project  
-├── images      
-<- Contains images and graphs used in this project sourced from code and outside source 
-├── gitattributes.txt             
-<- To track Data file using LFS
-├── gitignore.txt                  
-<- Contains a list of files to be ignored from Github  
-├── presentation.pdf               <- PDF version of the project presentation
-├── README.md                      <- The top-level README for reviewers of this project  
-└── airbnb_analysis.ipynb          <- Narrative documentation of the analysis in a Jupyter notebook  
+├── data		 				           	 	<- Data files used in this project 
+
+├── images		                         	 	<- Contains images and graphs used in this project sourced from code and outside source
+
+├── .gitattributes		                 	 	<- To track Data file using LFS
+
+├── .gitignore                     	 			<- Contains a list of files to be ignored from Github
+
+├── presentation.pdf		                	<- PDF version of the project presentation
+
+├── README.md 			                      	<- The top-level README for reviewers of this project
+
+└── airbnb_analysis.ipynb 			          	<- Narrative documentation of the analysis in a Jupyter notebook 
