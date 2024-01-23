@@ -41,15 +41,19 @@ After fine tuning, the SVD model emerged as the best one, achieving the lowest R
 
 # Next Steps
 
-- **Change** the user interface so that listing recommendations are shown near the top of the homepage.
-- **Include** feedback survey icons to ultimately gain insight on the performance of the listing recommendations.
-- **Add** demographic data for reviewers.
+- **Compare** Airbnb market in Tokyo with other major cities to identify unique trends and common patterns 
+- **Add** demographic data for reviewers
+- **Develop** predictive models to forecast future demand for Airbnb listings
 
 # For more information
 The complete analysis can be found in my [Jupyter Notebook](https://github.com/hthota1/Airbnb-Recommendation-System-Japan/blob/main/airbnb_analysis.ipynb) and [presentation](https://github.com/hthota1/Airbnb-Recommendation-System-Japan/blob/main/Presentation.pdf). 
 
 For any additional questions, you can contact me:
-[Harshitha Thota](harshitha.thota@gmail.com)
+
+
+**LinkedIn:** linkedin.com/in/harshithathota/
+
+**Email**: harshitha.thota@gmail.com
 
 # Repository Structure
 ├── data		 				           	 	<- Data files used in this project 
